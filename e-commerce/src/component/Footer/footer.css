@@ -1,0 +1,24 @@
+.footer {
+    padding: 40px;
+    background-color: #074D79;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    color:white
+}
+
+
+.text, .aboutUs, .Contact {
+    flex: 0.3;
+    width: 100%;
+    text-align: left;
+}
+
+.apps img {
+    width: 250px;
+}
+
+ul li{
+    margin: 10px;
+
+}

@@ -1,0 +1,36 @@
+.discount {
+    padding: 0 40px;
+    margin: 100px 0;
+}
+
+.discount .title {
+    display: flex;
+    align-items: center;
+    gap: .4rem
+}
+
+.discount_body {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+
+}
+
+
+.discountOption{
+    box-shadow: 0 0 2px 3px rgb(230, 227, 227);
+}
+
+.discountOption .img img {
+    height: 170px;
+    object-fit: contain;
+    width: 100%;
+}
+
+
+
+.discountOption .about .title{
+    font-weight: 600;
+    font-size: 19px;
+    margin-bottom: 5px;
+}

@@ -1,0 +1,56 @@
+.deals {
+    margin-top: 100px;
+    padding: 0px 40px;
+    line-height: 0;
+}
+
+.deal {
+    padding: 20px 0;
+}
+
+.dealWrapper {
+    position: relative;
+    margin-left: 20px;
+    padding: 10px;
+
+    box-shadow: 0 0 2px 3px rgb(227, 224, 224);
+}
+
+.dealWrapper .top {
+    height: 100px;
+    object-fit: contain;
+    padding: 15px;
+
+
+
+}
+
+.dealWrapper .top img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+
+}
+
+
+.dealWrapper .about_deal .price {
+    color: orange
+}
+
+.dealWrapper .add {
+    color: orange;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.dealWrapper .sale {
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    background: orange;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+
+}

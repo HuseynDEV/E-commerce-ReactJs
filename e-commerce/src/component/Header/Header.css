@@ -1,0 +1,203 @@
+.header {
+    box-shadow: 0 0 2px 3px rgb(228, 225, 225);
+}
+
+/* head */
+
+.head {
+    width: 100%;
+    height: 60px;
+    background: rgb(7, 77, 121);
+    color: white
+}
+
+
+.head .headWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+}
+
+.head .contact, .right {
+    gap: 1.5rem
+}
+
+.head .contact>div h4 {
+    margin-left: 5px;
+}
+
+
+
+.left .contact, .left .contact>div, .right, .languages {
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+
+/* Search */
+
+
+.search {
+    padding: 15px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.left img {
+    width: 200px;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+.center_search {
+    width: 70%;
+    margin: 0 20px;
+}
+
+.search .center_search, .right {
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+.center_search {
+    border: 1px solid rgb(197, 195, 195);
+    padding: 0px 15px 3px 0px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.center_search input {
+    border: none;
+    outline: none;
+    font-size: 20px;
+}
+
+.center_search p {
+    text-align: right;
+}
+
+.search .product {
+    position: relative;
+}
+
+.search .product_number {
+    position: absolute;
+    top: -6px;
+    right: -6px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: red;
+    text-align: center;
+    line-height: 18px;
+    color: white;
+    font-size: 14px;
+
+}
+
+
+
+/* Navbar */
+
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    position: sticky;
+    top:0
+}
+
+.navbar .navbar_left {
+    display: flex;
+    align-items: center;
+    gap: 1rem
+}
+
+
+.navbar_right .list {
+    display: flex;
+    align-items: center;
+    gap: 1.4rem
+}
+
+.list_item {
+    list-style: none;
+}
+
+.menu {
+    display: none;
+}
+
+
+.close {
+    display: none;
+}
+
+
+
+.active {
+    display: block;
+    padding: 30px;
+}
+
+
+@media (max-width:930px) {
+    .navbar_right .list {
+        display: none;
+    }
+
+    .navbar_right .list.active {
+        display: flex;
+        position: absolute;
+        top: -16px;
+        right: 0;
+        height: 100vh;
+        width: 300px;
+        flex-direction: column;
+        background: lightblue;
+        padding: 10px;
+    }
+
+    .navbar_right .list.remove {
+        display: none;
+    }
+
+    .close {
+        display: block;
+        text-align: left;
+        margin-right: 290px;
+    }
+
+    .menu {
+        display: block;
+    }
+
+    .center_search input{
+        display: none;
+    }
+}
+
+
+@media (max-width:728px){
+    .headWrapper .right{
+        display: none;
+    }
+}
